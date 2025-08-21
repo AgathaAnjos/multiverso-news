@@ -1,0 +1,141 @@
+/* Header */
+ul.nav-list {
+  padding: 0px;
+  display: flex;
+  gap: 40px;
+  margin: 20px 40px;
+}
+
+/* Estilo dos links */
+ul.nav-list li a {
+  text-decoration: none;
+  color: #990000;
+  font-size: 20px;
+}
+
+ul.nav-list li a:hover {
+  color: #690000;
+  transition: color ease-out;
+}
+
+/* Barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo img {
+  width: 350px;
+  padding: 10px;
+}
+
+/* campo de busca */
+.icon-search {
+  position: absolute;
+  pointer-events: none;
+  top: 27px;
+  padding-left: 5px;
+}
+
+.search input {
+  justify-content: center;
+  background-color: #990000;
+  border: 1px solid #490000;
+  border-radius: 20px;
+  width: 300px;
+  height: 30px;
+  padding-left: 30px;
+  transition: background-color 0.2s ease-out;
+}
+
+input::placeholder {
+  color: #200b0b;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.search input:hover {
+  background-color: #830000;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0f0606;
+  min-width: 110px;
+  padding: 0px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content li a {
+  display: block;
+  padding: 12px 0;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s ease-out;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+/* Fim do Header */
+
+/* main */
+/* exclusivas */
+.exclusivas,
+.noticias {
+  display: flex;
+}
+
+.exclusivas :hover {
+  color: #830000;
+  transition: color 0.2s ease-out;
+}
+
+.not-1 a {
+  text-decoration: none;
+  text-align: center;
+  color: #c00000;
+  outline: none;
+}
+
+.not-1 img {
+  width: 600px;
+  height: 300px;
+  margin: 20px 35px -10px 30px;
+  border-radius: 10px;
+}
+
+/* outras notícias */
+.nots img {
+  width: 370px;
+  height: 200px;
+  margin: 20px 35px -15px 40px;
+  border-radius: 10px;
+}
+
+.nots a {
+  text-decoration: none;
+  text-align: center;
+  color: #990000;
+  font-size: 17px;
+}
+
+.noticias :hover {
+  color: #680000;
+  transition: color 0.2s ease-out;
+}
